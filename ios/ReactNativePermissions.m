@@ -40,7 +40,6 @@
 #import "RNPPhoto.h"
 #import "RNPContacts.h"
 #import "RNPBackgroundRefresh.h"
-#import "RNPMotion.h"
 
 
 @interface ReactNativePermissions()
@@ -130,9 +129,6 @@ RCT_REMAP_METHOD(getPermissionStatus, getPermissionStatus:(RNPType)type json:(id
             break;
         case RNPTypeBackgroundRefresh:
             status = [RNPBackgroundRefresh getStatus];
-            break;
-        case RNPTypeMotion:
-            status = [RNPMotion getStatus];
             break;
         default:
             break;
