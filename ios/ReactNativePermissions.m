@@ -153,9 +153,7 @@ RCT_REMAP_METHOD(requestPermission, permissionType:(RNPType)type json:(id)json r
         case RNPTypeContacts:
             return [RNPContacts request:resolve];
         case RNPTypeNotification:
-            return [self requestNotification:json resolve:resolve];\
-        case RNPTypeMotion:
-            return [RNPMotion request:resolve];
+            return [self requestNotification:json resolve:resolve];
         default:
             break;
     }
